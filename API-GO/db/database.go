@@ -11,7 +11,7 @@ var DB *sql.DB
 
 func Init() {
 
-	cnx := "****:****!@tcp(localhost:3306)/****"
+	cnx := "****:******!@tcp(*****)/****"
 
 	var err error
 	DB, err = sql.Open("mysql", cnx)
