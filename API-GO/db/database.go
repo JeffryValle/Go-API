@@ -11,7 +11,7 @@ var DB *sql.DB
 
 func Init() {
 
-	cnx := "****:******!@tcp(*****)/****"
+	cnx := "****:****@tcp(****)/****"
 
 	var err error
 	DB, err = sql.Open("mysql", cnx)
@@ -32,4 +32,5 @@ func CloseConnection() {
 	if DB != nil {
 		DB.Close()
 	}
+	fmt.Println("Conexión Cerrada")
 }
